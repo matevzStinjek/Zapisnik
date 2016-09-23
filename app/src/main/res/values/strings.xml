@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Zapisnik</string>
+    <string name="action_settings">Refresh</string>
+    <string name="unsaved_number">Unsaved</string>
+    <string name="record">Add a record to your call</string>
+    <string name="hint">What was the call about...</string>
+    <string name="save">SAVE</string>
+    <string name="cancel">CANCEL</string>
+</resources>
