@@ -2,14 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp">
+    android:layout_margin="15dp">
 
 
     <TextView
         android:text="@string/record"
         android:textColor="#000000"
         android:alpha="0.84"
-        android:textSize="22sp"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -18,13 +18,14 @@
 
     <View
         android:layout_marginTop="5dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorAccent"
         android:id="@+id/separator"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@+id/title"/>
 
     <EditText
+        android:elevation="3dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -49,17 +50,18 @@
         android:textColor="@color/colorAccent"
         android:id="@+id/save"
         android:clickable="true"
-        android:layout_margin="15dp"/>
+        android:layout_margin="10dp"/>
 
     <TextView
         android:text="@string/cancel"
-        android:layout_marginTop="15dp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/comment"
-        android:layout_toStartOf="@+id/save"
         android:textColor="@color/colorAccent"
         android:clickable="true"
-        android:id="@+id/cancel" />
+        android:id="@+id/cancel"
+        android:layout_marginEnd="10dp"
+        android:layout_alignBaseline="@+id/save"
+        android:layout_alignBottom="@+id/save"
+        android:layout_toStartOf="@+id/save" />
 </RelativeLayout>
