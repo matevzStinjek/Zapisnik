@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_CALL_LOG) != PackageManager.PERMISSION_GRANTED) {
-                requestPermissions(new String[]{Manifest.permission.READ_CALL_LOG}, PERMISSION_REQUEST_READ_CALL_LOG_STATE);
+                requestPermissions(new String[]{Manifest.permission.READ_CALL_LOG, Manifest.permission.READ_PHONE_STATE}, PERMISSION_REQUEST_READ_CALL_LOG_STATE);
                 return;
             } else {
                 setList();
