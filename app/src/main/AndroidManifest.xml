@@ -19,12 +19,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <receiver android:name=".ServiceReceiver">
-                <intent-filter>
-                    <action android:name="android.intent.action.PHONE_STATE" />
-                </intent-filter>
-            </receiver>
         </activity>
+        <receiver android:name=".CallStateListener">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
